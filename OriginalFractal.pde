@@ -6,7 +6,7 @@ int x = 250;
 int y = 250;
 int s = 100;
 int l = 400;
-public void draw() {
+void draw() {
 	background(0);
 	fractal(x, y, s, l);
 }
@@ -15,10 +15,10 @@ public void mouseMoved() {
 	y = mouseY;
 }
 public void mouseWheel(MouseEvent event) {
-  float e1 = event.getCount();
-  s += -10*e1;
-  l += -20*e1;
-  println(e1);
+  float e = event.getCount();
+  s += -10*e;
+  l += -20*e;
+  println(e);
 }
 public void fractal(int x, int y, int s, int len) {
 	if(len > 5) {
