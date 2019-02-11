@@ -15,10 +15,10 @@ public void mouseMoved() {
 	y = mouseY;
 }
 public void mouseWheel(MouseEvent event) {
-  float e = event.getCount();
-  s += -10*e;
-  l += -20*e;
-  println(e);
+  float e1 = event.getCount();
+  s += -10*e1;
+  l += -20*e1;
+  // println(e1);
 }
 public void fractal(int x, int y, int s, int len) {
 	if(len > 5) {
